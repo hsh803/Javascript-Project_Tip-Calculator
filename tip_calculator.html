@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tip calculator</title>
     <script type="text/javascript" src="tip_calculator.js"></script>
     <link rel="stylesheet" href="tip_calculator.css">
   </head>
   <body>
+    <form class="tip_form">
     <div>
       <h4>Total Amount</h4>
       <input id="total" type="text" placeholder ='Total amount to pay'>
@@ -25,11 +27,13 @@
       <option value="0.3">Outstanding - 30%</option>
       <option value="0.2">Good - 20%</option>
       <option value="0.1">Ok - 10%</option>
-      <option value="0.05">Bad - 5%</option>
+      <option value="0">Bad - 0%</option>
     </select>
     </div>
-
-    <button onclick="tipCal()" type="button" name="Submit">Submit</button>
-
+    <div>
+      <button onclick="tipCal()" type="button" name="Submit">Submit</button>
+    </div>
+    
+  </form>
   </body>
 </html>
