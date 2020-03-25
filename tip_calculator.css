@@ -1,8 +1,24 @@
+body {
+  background-color: #f6f6f6;
+}
+
+.tip_form {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+}
+
+div {
+  max-width: 170px;
+  margin: 0 auto;
+}
+
 div p {
   color: red;
   font-style: italic;
 }
 
-button {
-  margin: 25px 0;
+div button {
+  margin: 20px 0;
 }
