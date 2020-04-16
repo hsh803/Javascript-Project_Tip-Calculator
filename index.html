@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tip calculator</title>
-    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <form class="tip_form">
     <div>
       <h4>Total Amount</h4>
-      <input id="total" type="text" placeholder ='Total amount to pay'>
+      <input type="number" min="1" step=".01" id="total" placeholder ='Total amount to pay'>
       <p id="warning1"></p>
     </div>
 
     <div>
     <h4>Total person</h4>
-    <input id="person" type="text" placeholder = 'Total number per person'>
+    <input type="number" min="1" step=".01" id="person" placeholder = 'Total number of persons'>
       <p id="warning2"></p>
     </div>
 
@@ -25,13 +25,13 @@
     <h4>Tip</h4>
     <select id="tip">
       <option value="0.3">Outstanding - 30%</option>
-      <option value="0.2">Good - 20%</option>
+      <option value="0.2" selected>Good - 20%</option>
       <option value="0.1">Ok - 10%</option>
       <option value="0">Bad - 0%</option>
     </select>
     </div>
     <div>
-      <button onclick="tipCal()" type="button" name="Submit">Submit</button>
+      <button onclick="tipCal()" type="button">OK</button>
     </div>
     
   </form>
