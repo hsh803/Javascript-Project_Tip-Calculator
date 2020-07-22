@@ -14,9 +14,14 @@ div {
   margin: 0 auto;
 }
 
-div p {
+h3 {
+  margin: 15px 0;
+}
+
+h4 {
   color: red;
-  font-style: italic;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 div button {

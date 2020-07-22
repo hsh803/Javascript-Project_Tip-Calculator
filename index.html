@@ -10,30 +10,26 @@
   <body>
     <form class="tip_form">
     <div>
-      <h4>Total Amount</h4>
-      <input type="number" min="1" step=".01" id="total" placeholder ='Total amount to pay'>
-      <p id="warning1"></p>
+      <h3>Total Amount</h3>
+      <input type="number" id="total" placeholder ='amount to pay'>
     </div>
 
     <div>
-    <h4>Total person</h4>
-    <input type="number" min="1" step=".01" id="person" placeholder = 'Total number of persons'>
-      <p id="warning2"></p>
+    <h3>Total person</h3>
+    <input type="number" id="person" placeholder = 'number of persons'>
     </div>
 
     <div>
-    <h4>Tip</h4>
-    <select id="tip">
-      <option value="0.3">Outstanding - 30%</option>
-      <option value="0.2" selected>Good - 20%</option>
-      <option value="0.1">Ok - 10%</option>
-      <option value="0">Bad - 0%</option>
-    </select>
+    <h3>Tip(%)</h3>
+    <input type="number" id="tip" placeholder="10">
     </div>
     <div>
-      <button onclick="tipCal()" type="button">OK</button>
+      <button type="button" onclick="tipCal()">OK</button>
     </div>
-    
+    <div>
+      <h4 id="cal"></h4>
+    </div>
   </form>
+
   </body>
 </html>
